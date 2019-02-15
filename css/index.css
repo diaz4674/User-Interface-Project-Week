@@ -188,11 +188,13 @@ html body .topHeader .topText {
   bottom: 55px;
   padding-left: 80px;
   margin-top: -20px;
-  width: 100%;
+  width: 400px;
 }
 html body .topHeader .topText h2 {
   display: flex;
   align-items: center;
+  width: 400px;
+  max-width: 100%;
 }
 html body .subHeader {
   display: flex;
@@ -223,14 +225,29 @@ html body .architects .content .learnMore {
   display: flex;
   justify-content: center;
 }
+html body .architects .img1 {
+  max-width: 100%;
+  display: block;
+}
+html body .architects .img1Mobile {
+  display: none;
+}
 html body .futureDesigns {
   display: flex;
   justify-content: center;
   padding: 15px;
+  max-width: 100%;
+}
+html body .futureDesigns .futureImg1 {
+  display: block;
+}
+html body .futureDesigns .futureImg2 {
+  display: none;
 }
 html body .futureDesigns .content {
   padding: 20px;
   width: 390px;
+  max-width: 100%;
 }
 html body .futureDesigns .content h2 {
   padding: 15px;
@@ -248,51 +265,56 @@ html body .futureDesigns .content .viewDesigns {
   display: flex;
   justify-content: center;
 }
-html body .recentProjects .villasImg {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 60px;
-  max-width: 100%;
-}
-html body .recentProjects .villasImg h2 {
+html body .recentProjects h2 {
+  padding: 23px 104px;
   font-weight: bold;
   font-size: 28px;
   color: #222222;
-  padding-bottom: 46px;
 }
-html body .recentProjects .villasImg img {
+html body .recentProjects .villasImg {
   display: flex;
-  justify-content: center;
-  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 24px 58px;
   max-width: 100%;
 }
-html body .recentProjects .villasImg .theVillas {
+html body .recentProjects .villasImg .villas1 {
+  display: block;
+}
+html body .recentProjects .villasImg .villasMobile {
+  display: none;
+}
+html body .recentProjects .theVillas {
   display: flex;
   justify-content: center;
   position: relative;
   width: 254px;
   max-width: 100%;
-  margin-left: 63%;
   bottom: 46px;
   border: 1px solid white;
   padding: 32px;
   background-color: gray;
 }
-html body .recentProjects .villasContent {
+html body .villasContent {
   margin: 0 auto;
   width: 420px;
 }
-html body .outskirts {
+html .outskirts {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 145px 0 25px;
 }
-html body .outskirts .img {
-  position: relative;
+html .outskirts .outskirtsImg {
+  max-width: 100%;
 }
-html body .outskirts .outskirtsHeader {
+html .outskirts .outskirtsImg .outskirtsImg1 {
+  display: block;
+}
+html .outskirts .outskirtsImg .outskirtsImgMobile {
+  display: none;
+}
+html .outskirts .outskirtsImg .outskirtsHeader {
   font-weight: bold;
   font-size: 28px;
   display: flex;
@@ -306,24 +328,25 @@ html body .outskirts .outskirtsHeader {
   background-color: gray;
   border: 1px solid white;
 }
-html body .outskirts .outskirtsContent {
+html .outskirts .outskirtsImg .outskirtsContent {
   width: 420px;
 }
-html body .theBlocks {
+html .theBlocks {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-html body .theBlocks .blocksImg {
+html .theBlocks .blocksImg {
   padding: 140px 0 25px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-html body .theBlocks .blocksImg .img {
+html .theBlocks .blocksImg .img {
   position: relative;
 }
-html body .theBlocks .blocksImg .blocksHeader {
+html .theBlocks .blocksImg .blocksHeader {
   font-weight: bold;
   font-size: 28px;
   display: flex;
@@ -336,10 +359,10 @@ html body .theBlocks .blocksImg .blocksHeader {
   width: 254px;
   bottom: 55px;
 }
-html body .theBlocks .blocksContent {
+html .theBlocks .blocksContent {
   width: 420px;
 }
-html body .footer {
+html .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,55 +371,192 @@ html body .footer {
   padding: 50px 0 0;
   background-color: #828282;
 }
-html body .footer .footerContain {
+html .footer .footerContain {
   display: flex;
   justify-content: space-around;
   padding: 16px 0;
   width: 100%;
 }
-html body .footer .footerContain .emailFooter {
+html .footer .footerContain .emailFooter {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-html body .footer .footerContain .emailFooter h2 {
+html .footer .footerContain .emailFooter h2 {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
 }
-html body .footer .footerContain .emailFooter input {
+html .footer .footerContain .emailFooter input {
   margin: 10px 0;
   padding: 10px 50px;
   border-radius: 7px;
 }
-html body .footer .footerContain .emailFooter p {
+html .footer .footerContain .emailFooter p {
   font-weight: regular;
   font-size: 14px;
   line-height: 26px;
   color: #FFFFFF;
 }
-html body .footer .footerContain .footerContainer {
+html .footer .footerContain .footerContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-html body .footer .footerContain .footerContainer h2 {
+html .footer .footerContain .footerContainer h2 {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
 }
-html body .footer .footerContain .footerContainer p {
+html .footer .footerContain .footerContainer p {
   font-weight: regular;
   font-size: 14px;
   line-height: 26px;
   color: #FFFFFF;
 }
-html body .footer .copyright p {
+html .footer .copyright p {
   font-weight: regular;
   font-size: 14px;
   line-height: 26px;
   color: #FFFFFF;
   padding: 10px 0 0;
+}
+@media (max-width: 500px) {
+  html {
+    max-width: 100%;
+    font-size: 62.5%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  html body .navBar .logo {
+    margin-left: 0px;
+    padding: 13px;
+  }
+  html body .navBar .hamburger {
+    margin-right: 0px;
+    padding: 13px;
+  }
+  html body .architects {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 40px 0 15px;
+  }
+  html body .architects .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+  }
+  html body .architects .content h2 {
+    font-size: 25px;
+    width: 100%;
+  }
+  html body .architects .content p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 0 27px;
+  }
+  html body .architects .content .learnMore {
+    margin: 0 auto;
+    width: 100%;
+  }
+  html body .architects .content .learnMore p {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  html body .architects .homeImg1 .img1 {
+    display: none;
+  }
+  html body .architects .homeImg1 .img1Mobile {
+    display: block;
+  }
+  html body .futureDesigns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .futureDesigns .futureImg1 {
+    display: none;
+  }
+  html body .futureDesigns .futureImg2 {
+    display: block;
+  }
+  html body .futureDesigns .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 65%;
+  }
+  html body .futureDesigns .content h2 {
+    padding: 15px 0;
+  }
+  html body .futureDesigns .content p {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 0 27px;
+  }
+  html body .futureDesigns .content .viewDesigns {
+    width: 100%;
+    margin: 0 auto;
+  }
+  html body .futureDesigns .content .viewDesigns p {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    max-width: 100%;
+  }
+  html body .recentProjects h2 {
+    padding: 0 80px;
+  }
+  html body .recentProjects .villasImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .recentProjects .villasImg .villas1 {
+    display: none;
+  }
+  html body .recentProjects .villasImg .villasMobile {
+    display: block;
+  }
+  html body .recentProjects .villasImg .theVillas {
+    width: 220px;
+    bottom: 15px;
+  }
+  html body .recentProjects .villasContent {
+    max-width: 65%;
+  }
+  html body .recentProjects .villasContent p {
+    padding: 10px;
+  }
+  html body .outskirts {
+    padding: 40px 0 25px;
+  }
+  html body .outskirts .outskirtsImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .outskirts .outskirtsImg .outskirtsImg1 {
+    display: none;
+  }
+  html body .outskirts .outskirtsImg .outskirtsImgMobile {
+    display: block;
+  }
+  html body .outskirts .outskirtsImg .outskirtsHeader {
+    width: 220px;
+    bottom: 13px;
+  }
+  html body .outskirts .outskirtsContent {
+    max-width: 65%;
+  }
+  html body .outskirts .outskirtsContent p {
+    padding: 10px;
+  }
 }

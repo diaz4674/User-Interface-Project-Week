@@ -122,10 +122,12 @@ p{
           bottom: 55px;
           padding-left: 80px;
           margin-top: -20px;
-          width:100%;
+          width: 400px;
           h2 { 
           display: flex;
           align-items: center;
+          width: 400px;
+          max-width: 100%;
         }
         
         }
@@ -167,16 +169,31 @@ p{
                    
         }
 
+        .img1 {
+          max-width: 100%;
+          display: block;
+        }
+        .img1Mobile{
+          display: none;
+        }
+
       }
 
       .futureDesigns{
         display: flex;
         justify-content: center;
         padding: 15px;
+        max-width: 100%;
+        .futureImg1 {
+          display: block;
+        }
+        .futureImg2 {
+          display: none;
+        }
         .content{
           padding: 20px;
           width: 390px;
-
+          max-width: 100%;
           h2{
             padding: 15px;
             font-weight: bold;
@@ -192,41 +209,41 @@ p{
             border: 2px solid black;
             display: flex;
             justify-content: center;
-
+        
           }
           }
       }
 
       .recentProjects{
-  
+
+        h2{
+          padding: 23px 104px;
+          font-weight: bold;
+          font-size: 28px;
+          color: #222222;
+          
+
+        }
         .villasImg{
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
-          padding: 60px;
+          align-items: flex-end;
+          padding: 24px 58px;
           max-width: 100%;
 
-          h2{
-            font-weight: bold;
-            font-size: 28px;
-            color: #222222;
-            padding-bottom: 46px;
-          }
-           
-            img {
-              display: flex;
-              justify-content: center;
-              position: relative;
-              max-width: 100%;
-
-            }
+          .villas1{ 
+            display: block;
+         }
+         .villasMobile {
+           display: none;
+         }
+        }
             .theVillas{
               display: flex;
               justify-content: center;
               position: relative;
               width: 254px;
               max-width: 100%;
-              margin-left: 63%;
               bottom: 46px;
               border: 1px solid white;
               padding: 32px;
@@ -247,9 +264,16 @@ p{
         flex-direction: column;
         align-items: center;
         padding: 145px 0 25px;
-          .img{
-            position: relative;
+        .outskirtsImg{
+          max-width: 100%;
+
+          .outskirtsImg1{
+            display: block;
           }
+          .outskirtsImgMobile{
+            display: none;
+          }
+         
           .outskirtsHeader {
             font-weight: bold;
             font-size: 28px;
@@ -268,8 +292,9 @@ p{
           .outskirtsContent{
                 width: 420px;
           }
+        }
       }
-
+    
       .theBlocks{
         display: flex;
         flex-direction: column;
@@ -277,6 +302,7 @@ p{
        
         .blocksImg{
           padding: 140px 0 25px;
+          width: 100%;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
@@ -369,11 +395,165 @@ p{
           }
        
       }
-
-
-
-     
-     
-
     }
+
+
+@media (max-width:500px){
+  html {
+      max-width: 100%;
+      font-size: 62.5%;
+      width: 100%;
+      margin: 0 auto;
+
+    body {
+      .navBar{
+        .logo {
+          margin-left: 0px;
+          padding: 13px;
+        }
+        .hamburger{
+          margin-right: 0px;
+          padding: 13px;
+        }
+      }
+
+      .architects{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 40px 0 15px;
+
+        .content{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 60%;
+            
+            h2 {
+              font-size: 25px;
+              width: 100%;
+            }
+            p {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              padding: 0 0 27px;  
+            }
+            .learnMore {
+              margin: 0 auto;
+              width: 100%;
+                p{
+                  display: flex;
+                  justify-content: center;
+                  padding: 15px;
+                }
+            }
+        }
+        .homeImg1 {
+          .img1 {
+            display: none;
+          }
+          .img1Mobile{
+            display: block;
+          }
+        }
+      }
+
+      .futureDesigns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .futureImg1 {
+          display: none;
+        }
+        .futureImg2 {
+          display: block;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          max-width: 65%;
+          h2 {
+            padding: 15px 0;
+          }
+          p {
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+            padding: 0 0 27px;
+          }
+          .viewDesigns { 
+            width: 100%;
+            margin: 0 auto;
+            p{
+              display: flex;
+              justify-content: center;
+              padding: 15px;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      .recentProjects {
+        h2 {
+          padding: 0 80px;
+        }
+        .villasImg{ 
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .villas1{ 
+            display: none;
+          }
+          .villasMobile {
+            display: block;
+          }
+          .theVillas {
+            width: 220px;
+            bottom: 15px;
+
+          }
+        }
+        .villasContent {
+          max-width: 65%; 
+
+          p {
+            padding: 10px;
+          }
+        }
+      }
+
+      .outskirts {
+        padding: 40px 0 25px;
+        .outskirtsImg{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .outskirtsImg1 {
+            display: none;
+          }
+          .outskirtsImgMobile{
+            display: block;
+          }
+          .outskirtsHeader {
+            width: 220px;
+            bottom: 13px;
+          }
+        }
+
+        .outskirtsContent {
+          max-width: 65%; 
+
+          p {
+            padding: 10px;
+          }
+        }
+      }
+      
+    }
+
   }
+}
