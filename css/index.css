@@ -1,8 +1,8 @@
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0b1 | 201101 
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0b1 | 201101
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
 html,
@@ -432,180 +432,504 @@ html .footer .copyright p {
   color: #FFFFFF;
   padding: 10px 0 0;
 }
-@media (max-width: 500px) {
-  html html {
+@media (max-width: 499px) {
+  html {
     max-width: 100%;
     font-size: 62.5%;
     width: 100%;
     margin: 0 auto;
   }
-  html html body .navBar .logo {
+  html body .navBar .logo {
     margin-left: 0px;
     padding: 13px;
   }
-  html html body .navBar .hamburger {
+  html body .navBar .hamburger {
     margin-right: 0px;
     padding: 13px;
   }
-  html html body .architects {
+  html body .architects {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 40px 0 15px;
   }
-  html html body .architects .content {
+  html body .architects .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 60%;
   }
-  html html body .architects .content h2 {
+  html body .architects .content h2 {
     font-size: 25px;
     width: 100%;
   }
-  html html body .architects .content p {
+  html body .architects .content p {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0 0 27px;
   }
-  html html body .architects .content .learnMore {
+  html body .architects .content .learnMore {
     margin: 0 auto;
     width: 100%;
   }
-  html html body .architects .content .learnMore p {
+  html body .architects .content .learnMore p {
     display: flex;
     justify-content: center;
     padding: 15px;
   }
-  html html body .architects .homeImg1 .img1 {
+  html body .architects .homeImg1 .img1 {
     display: none;
   }
-  html html body .architects .homeImg1 .img1Mobile {
+  html body .architects .homeImg1 .img1Mobile {
     display: block;
   }
-  html html body .futureDesigns {
+  html body .futureDesigns {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  html html body .futureDesigns .futureImg1 {
+  html body .futureDesigns .futureImg1 {
     display: none;
   }
-  html html body .futureDesigns .futureImg2 {
+  html body .futureDesigns .futureImg2 {
     display: block;
   }
-  html html body .futureDesigns .content {
+  html body .futureDesigns .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 65%;
   }
-  html html body .futureDesigns .content h2 {
+  html body .futureDesigns .content h2 {
     padding: 15px 0;
   }
-  html html body .futureDesigns .content p {
+  html body .futureDesigns .content p {
     display: flex;
     justify-content: center;
     max-width: 100%;
     padding: 0 0 27px;
   }
-  html html body .futureDesigns .content .viewDesigns {
+  html body .futureDesigns .content .viewDesigns {
     width: 100%;
     margin: 0 auto;
   }
-  html html body .futureDesigns .content .viewDesigns p {
+  html body .futureDesigns .content .viewDesigns p {
     display: flex;
     justify-content: center;
     padding: 15px;
     max-width: 100%;
   }
-  html html body .recentProjects h2 {
+  html body .recentProjects h2 {
     padding: 0 80px;
   }
-  html html body .recentProjects .villasImg {
+  html body .recentProjects .villasImg {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  html html body .recentProjects .villasImg .villas1 {
+  html body .recentProjects .villasImg .villas1 {
     display: none;
   }
-  html html body .recentProjects .villasImg .villasMobile {
+  html body .recentProjects .villasImg .villasMobile {
     display: block;
   }
-  html html body .recentProjects .villasImg .theVillas {
+  html body .recentProjects .villasImg .theVillas {
     width: 220px;
     bottom: 15px;
   }
-  html html body .recentProjects .villasContent {
+  html body .recentProjects .villasContent {
     max-width: 65%;
   }
-  html html body .recentProjects .villasContent p {
+  html body .recentProjects .villasContent p {
     padding: 10px;
   }
-  html html body .outskirts {
+  html body .outskirts {
     padding: 40px 0 25px;
   }
-  html html body .outskirts .outskirtsImg {
+  html body .outskirts .outskirtsImg {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  html html body .outskirts .outskirtsImg .outskirtsImg1 {
+  html body .outskirts .outskirtsImg .outskirtsImg1 {
     display: none;
   }
-  html html body .outskirts .outskirtsImg .outskirtsImgMobile {
+  html body .outskirts .outskirtsImg .outskirtsImgMobile {
     display: block;
   }
-  html html body .outskirts .outskirtsImg .outskirtsHeader {
+  html body .outskirts .outskirtsImg .outskirtsHeader {
     width: 220px;
     bottom: 13px;
   }
-  html html body .outskirts .outskirtsContent {
+  html body .outskirts .outskirtsContent {
     max-width: 65%;
   }
-  html html body .outskirts .outskirtsContent p {
+  html body .outskirts .outskirtsContent p {
     padding: 10px;
   }
-  html html body .theBlocks {
+  html body .theBlocks {
     padding-bottom: 65px;
   }
-  html html body .theBlocks .blocksImg {
+  html body .theBlocks .blocksImg {
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  html html body .theBlocks .blocksImg .blocksDesktop {
+  html body .theBlocks .blocksImg .blocksDesktop {
     position: relative;
     display: none;
   }
-  html html body .theBlocks .blocksImg .blocksMobile {
+  html body .theBlocks .blocksImg .blocksMobile {
     display: block;
   }
-  html html body .theBlocks .blocksImg .blocksHeader {
+  html body .theBlocks .blocksImg .blocksHeader {
     width: 220px;
     bottom: 13px;
   }
-  html html body .theBlocks .blocksContent {
+  html body .theBlocks .blocksContent {
     max-width: 65%;
   }
-  html html body .theBlocks .blocksContent p {
+  html body .theBlocks .blocksContent p {
     padding: 10px;
   }
-  html html body .footer {
+  html body .footer {
     margin-top: 0px;
   }
-  html html body .footer .footerContain {
+  html body .footer .footerContain {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  html html body .footer .footerContain .footerContainer {
+  html body .footer .footerContain .footerContainer {
     padding: 15px 175px 10px 0;
   }
-  html html body .footer .copyright {
+  html body .footer .copyright {
     padding: 0px 95px 0 0;
   }
+}
+/*------------------------------------*\
+RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0b1 | 201101
+NOTE:WORK IN PROGRESS
+USE WITH CAUTION AND TEST WITH ABANDON */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Your Code Goes Here */
+/* Global Code Start */
+p {
+  font-size: 16px;
+  font-weight: regular;
+  line-height: 24px;
+}
+/* Global Code End */
+html {
+  font-size: 62.5%;
+  max-width: 1025px;
+  width: 100%;
+  margin: 0 auto;
+}
+html body {
+  max-width: 100%;
+}
+html body .navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  background-color: #828282;
+}
+html body .navBar .logo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 13px;
+  margin-left: 75px;
+}
+html body .navBar .hamburger {
+  margin-right: 75px;
+  padding: 13px;
+}
+html body .navBar .navOptions {
+  display: none;
+}
+html body .topHeader {
+  position: relative;
+}
+html body .topHeader .jumbotron img {
+  width: 100%;
+}
+html body .topHeader .topText {
+  font-size: 64px;
+  font-weight: bold;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 55px;
+  padding-left: 80px;
+  margin-top: -20px;
+  width: 400px;
+}
+html body .topHeader .topText h2 {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  max-width: 100%;
+}
+html body .bodyContainer {
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+html body .bodyContainer .servicesHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .bodyContainer .servicesHeader p {
+  width: 92%;
+  padding: 50px 0 46px;
+  margin: 0 auto;
+}
+html body .bodyContainer .tabs {
+  width: 100%;
+}
+html body .bodyContainer .tabs .tabsHeader {
+  display: flex;
+  justify-content: space-around;
+}
+html body .bodyContainer .tabs .tabsHeader .construction-tab {
+  background-color: #5E9FB9;
+  color: white;
+}
+html body .bodyContainer .tabs .tabsHeader h2 {
+  border: 1px solid black;
+  padding: 13px;
+  width: 155px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #222222;
+  font-family: Roboto;
+}
+html body .bodyContainer .tabs .tabsHeader h2:hover {
+  cursor: pointer;
+  background-color: #222222;
+  color: #FFF;
+}
+html body .bodyContainer .tabs .tabs-content {
+  display: flex;
+  justify-content: center;
+  width: 96%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+html body .bodyContainer .tabs .tabs-content .tabs-text h2 {
+  font-size: 24px;
+}
+html body .bodyContainer .tabs .tabs-content .tabs-text p {
+  padding: 20px 0 20px 0;
+  width: 90%;
+}
+html body .bodyContainer .tabs .tabs-content .constructionImg {
+  display: block;
+  margin: 41px 0 0;
+}
+html body .bodyContainer .tabs .tabs-content .constructionImgMobile {
+  display: none;
+}
+html body .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0 0;
+  background-color: #828282;
+  margin: 50px auto 0;
+}
+html body .footer .footerContain {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 0;
+  width: 100%;
+}
+html body .footer .footerContain .emailFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body .footer .footerContain .emailFooter h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+html body .footer .footerContain .emailFooter input {
+  margin: 10px 0;
+  padding: 10px 50px;
+  border-radius: 7px;
+}
+html body .footer .footerContain .emailFooter p {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+html body .footer .footerContain .footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+html body .footer .footerContain .footerContainer h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+html body .footer .footerContain .footerContainer p {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+html body .footer .copyright p {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+  padding: 10px 0 0;
 }
