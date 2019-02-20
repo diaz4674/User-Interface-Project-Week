@@ -157,18 +157,9 @@ p{
                .tabsHeader{
                     display: flex;
                     justify-content: space-around;
-                    .construction-tab {
+                    .tabs-link-selected {
                         background-color: #5E9FB9;
                         color: white;
-                    }
-                    .Preconstruction-tab {
-
-                    }
-                    .design-tab {
-
-                    }
-                    .sustainability-tab{
-                        
                     }
 
                     h2 {
@@ -198,8 +189,8 @@ p{
                    margin: 0 auto;
                    padding:50px 0;
 
-                   .tabs-text {
-
+                   .tabs-item {
+                      display: none;
                         h2 {
                            
                             font-size: 24px;
@@ -210,11 +201,14 @@ p{
                             
                         }
                     }
-                   .constructionImg {
+                    .tabs-item-selected{
+                      display: flex;
+                    }
+                   .tabs-Img {
                        display: block;
                        margin: 41px 0 0;
                    }
-                   .constructionImgMobile {
+                   .tabs-Img-Mobile {
                        display: none;
                    }
                }

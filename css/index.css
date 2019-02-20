@@ -148,14 +148,14 @@ html {
   margin: 0 auto;
 }
 html body {
-  max-width: 100%;
+  width: 100%;
   position: relative;
 }
 html body .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 100%;
+  width: 100%;
   background-color: #828282;
 }
 html body .navBar .logo {
@@ -228,7 +228,7 @@ html body .topHeader .topText h2 {
   display: flex;
   align-items: center;
   width: 400px;
-  max-width: 100%;
+  width: 100%;
 }
 html body .subHeader {
   display: flex;
@@ -260,7 +260,7 @@ html body .architects .content .learnMore {
   justify-content: center;
 }
 html body .architects .img1 {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 html body .architects .img1Mobile {
@@ -270,7 +270,7 @@ html body .futureDesigns {
   display: flex;
   justify-content: center;
   padding: 15px;
-  max-width: 100%;
+  width: 100%;
 }
 html body .futureDesigns .futureImg1 {
   width: 100%;
@@ -285,7 +285,7 @@ html body .futureDesigns .futureImg2 {
 html body .futureDesigns .content {
   padding: 20px;
   width: 390px;
-  max-width: 100%;
+  width: 100%;
 }
 html body .futureDesigns .content h2 {
   padding: 15px;
@@ -314,7 +314,7 @@ html body .recentProjects .villasImg {
   flex-direction: column;
   align-items: flex-end;
   padding: 24px 58px;
-  max-width: 100%;
+  width: 100%;
 }
 html body .recentProjects .villasImg .villas1 {
   display: block;
@@ -327,7 +327,7 @@ html body .recentProjects .theVillas {
   justify-content: center;
   position: relative;
   width: 254px;
-  max-width: 100%;
+  width: 100%;
   bottom: 46px;
   border: 1px solid white;
   padding: 32px;
@@ -344,7 +344,7 @@ html .outskirts {
   padding: 45px 0 0;
 }
 html .outskirts .outskirtsImg {
-  max-width: 100%;
+  width: 100%;
 }
 html .outskirts .outskirtsImg .outskirtsImg1 {
   display: block;
@@ -377,7 +377,7 @@ html .theBlocks {
 }
 html .theBlocks .blocksImg {
   padding: 45px 0 0;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -470,8 +470,8 @@ html .footer .copyright p {
   html {
     max-width: 100%;
     font-size: 62.5%;
-    width: 100%;
     margin: 0 auto;
+    background-color: red;
   }
   html body .navBar .logo {
     margin-left: 0px;
@@ -485,13 +485,13 @@ html .footer .copyright p {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 40px 0 15px;
+    padding: 40px 0 15px 0;
   }
   html body .architects .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 60%;
+    width: 60%;
   }
   html body .architects .content h2 {
     font-size: 25px;
@@ -522,6 +522,7 @@ html .footer .copyright p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px 0;
   }
   html body .futureDesigns .futureImg1 {
     display: none;
@@ -533,7 +534,7 @@ html .footer .copyright p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 65%;
+    width: 65%;
   }
   html body .futureDesigns .content h2 {
     padding: 15px 0;
@@ -541,7 +542,7 @@ html .footer .copyright p {
   html body .futureDesigns .content p {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
     padding: 0 0 27px;
   }
   html body .futureDesigns .content .viewDesigns {
@@ -552,7 +553,7 @@ html .footer .copyright p {
     display: flex;
     justify-content: center;
     padding: 15px;
-    max-width: 100%;
+    width: 100%;
   }
   html body .recentProjects h2 {
     padding: 0 80px;
@@ -561,6 +562,8 @@ html .footer .copyright p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 0;
   }
   html body .recentProjects .villasImg .villas1 {
     display: none;
@@ -573,7 +576,7 @@ html .footer .copyright p {
     bottom: 15px;
   }
   html body .recentProjects .villasContent {
-    max-width: 65%;
+    width: 65%;
   }
   html body .recentProjects .villasContent p {
     padding: 10px;
@@ -597,7 +600,7 @@ html .footer .copyright p {
     bottom: 13px;
   }
   html body .outskirts .outskirtsContent {
-    max-width: 65%;
+    width: 65%;
   }
   html body .outskirts .outskirtsContent p {
     padding: 10px;
@@ -623,7 +626,7 @@ html .footer .copyright p {
     bottom: 13px;
   }
   html body .theBlocks .blocksContent {
-    max-width: 65%;
+    width: 65%;
   }
   html body .theBlocks .blocksContent p {
     padding: 10px;
@@ -865,7 +868,7 @@ html body .bodyContainer .tabs .tabsHeader {
   display: flex;
   justify-content: space-around;
 }
-html body .bodyContainer .tabs .tabsHeader .construction-tab {
+html body .bodyContainer .tabs .tabsHeader .tabs-link-selected {
   background-color: #5E9FB9;
   color: white;
 }
@@ -892,18 +895,24 @@ html body .bodyContainer .tabs .tabs-content {
   margin: 0 auto;
   padding: 50px 0;
 }
-html body .bodyContainer .tabs .tabs-content .tabs-text h2 {
+html body .bodyContainer .tabs .tabs-content .tabs-item {
+  display: none;
+}
+html body .bodyContainer .tabs .tabs-content .tabs-item h2 {
   font-size: 24px;
 }
-html body .bodyContainer .tabs .tabs-content .tabs-text p {
+html body .bodyContainer .tabs .tabs-content .tabs-item p {
   padding: 20px 0 20px 0;
   width: 90%;
 }
-html body .bodyContainer .tabs .tabs-content .constructionImg {
+html body .bodyContainer .tabs .tabs-content .tabs-item-selected {
+  display: flex;
+}
+html body .bodyContainer .tabs .tabs-content .tabs-Img {
   display: block;
   margin: 41px 0 0;
 }
-html body .bodyContainer .tabs .tabs-content .constructionImgMobile {
+html body .bodyContainer .tabs .tabs-content .tabs-Img-Mobile {
   display: none;
 }
 html body .footer {

@@ -76,13 +76,13 @@ p{
    margin: 0 auto;
 
    body{
-     max-width: 100%;
+     width: 100%;
      position: relative;
      .navBar {
        display: flex;
        flex-direction: row;
        justify-content: space-between;
-       max-width: 100%;
+       width: 100%;
        background-color: #828282;
       
          .logo {
@@ -167,7 +167,7 @@ p{
          display: flex;
          align-items: center;
          width: 400px;
-         max-width: 100%;
+         width: 100%;
        }
       
        }
@@ -210,7 +210,7 @@ p{
        }
 
        .img1 {
-         max-width: 100%;
+         width: 100%;
          display: block;
        }
        .img1Mobile{
@@ -223,7 +223,7 @@ p{
        display: flex;
        justify-content: center;
        padding: 15px;
-       max-width: 100%;
+      width: 100%;
        .futureImg1 {
            width: 100%;
            display: block;
@@ -237,7 +237,7 @@ p{
        .content{
          padding: 20px;
          width: 390px;
-         max-width: 100%;
+         width: 100%;
          h2{
            padding: 15px;
            font-weight: bold;
@@ -272,7 +272,7 @@ p{
          flex-direction: column;
          align-items: flex-end;
          padding: 24px 58px;
-         max-width: 100%;
+         width: 100%;
 
          .villas1{
            display: block;
@@ -286,7 +286,7 @@ p{
              justify-content: center;
              position: relative;
              width: 254px;
-             max-width: 100%;
+             width: 100%;
              bottom: 46px;
              border: 1px solid white;
              padding: 32px;
@@ -308,7 +308,7 @@ p{
        align-items: center;
        padding: 45px 0 0;
        .outskirtsImg{
-         max-width: 100%;
+         width: 100%;
 
          .outskirtsImg1{
            display: block;
@@ -346,7 +346,7 @@ p{
      
        .blocksImg{
          padding: 45px 0 0;
-         max-width: 100%;
+         width: 100%;
          display: flex;
          flex-direction: column;
          align-items: flex-end;
@@ -447,11 +447,12 @@ p{
 
 
    @media (max-width: 499px) {
+
  html {
      max-width: 100%;
      font-size: 62.5%;
-     width: 100%;
      margin: 0 auto;
+     background-color:red;
 
    body {
      .navBar{
@@ -469,13 +470,13 @@ p{
        display: flex;
        flex-direction: column-reverse;
        align-items: center;
-       padding: 40px 0 15px;
+       padding: 40px 0 15px 0;
 
        .content{
          display: flex;
          flex-direction: column;
          align-items: center;
-         max-width: 60%;
+         width: 60%;
           
            h2 {
              font-size: 25px;
@@ -511,7 +512,7 @@ p{
        display: flex;
        flex-direction: column;
        align-items: center;
-      
+      padding: 15px 0;
        .futureImg1 {
          display: none;
        }
@@ -522,14 +523,14 @@ p{
          display: flex;
          flex-direction: column;
          align-items: flex-start;
-         max-width: 65%;
+         width: 65%;
          h2 {
            padding: 15px 0;
          }
          p {
            display: flex;
            justify-content: center;
-           max-width: 100%;
+           width: 100%;
            padding: 0 0 27px;
          }
          .viewDesigns {
@@ -539,7 +540,7 @@ p{
              display: flex;
              justify-content: center;
              padding: 15px;
-             max-width: 100%;
+             width: 100%;
            }
          }
        }
@@ -553,6 +554,8 @@ p{
          display: flex;
          flex-direction: column;
          align-items: center;
+         width: 100%;
+         padding: 0;
          .villas1{
            display: none;
          }
@@ -566,7 +569,7 @@ p{
          }
        }
        .villasContent {
-         max-width: 65%;
+         width: 65%;
 
          p {
            padding: 10px;
@@ -593,7 +596,8 @@ p{
        }
 
        .outskirtsContent {
-         max-width: 65%;
+         
+        width: 65%;
 
          p {
            padding: 10px;
@@ -622,7 +626,7 @@ p{
 
        }
        .blocksContent {
-         max-width: 65%;
+         width: 65%;
 
          p {
            padding: 10px;
